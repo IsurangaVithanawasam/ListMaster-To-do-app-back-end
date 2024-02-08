@@ -104,7 +104,7 @@ public class TaskHttpController {
         }
     }
 
-    /* @ResponseStatus(HttpStatus.OK) */
+
     @GetMapping(produces = "application/json", params = {"email"})
     public List<TaskTO> getAllTasks(String email) {
         try (Connection connection = pool.getConnection()) {
